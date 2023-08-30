@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+body{
+  background: rgb(26, 26, 26) ;
+  color:white;
+}
+.prime{
+  height: calc(100vh - 80px);
+}
+::-webkit-scrollbar{
+  display: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: gainsboro!important;
+}
+input{
+  outline: none!important;
+}
+.bgx{
+  background: #0000006b!important;
+}
+.cardImage{
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tightLeft{
+  text-align: left!important;
+}
+.navOutHeightScreen{
+  height: calc(100vh - 80px);
+}
