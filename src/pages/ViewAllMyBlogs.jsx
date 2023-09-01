@@ -13,7 +13,6 @@ import { ClickSwapTrue } from '../features/blogSlice'
 
 const ViewAllMyBlogs = () => {
     const { myBlogData } = useSelector((state) => state.blog)
-    console.log(myBlogData)
     const dispatch=useDispatch()
 
     const handleSubClildSwap=()=>{

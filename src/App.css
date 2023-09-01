@@ -33,3 +33,14 @@ input{
 .navOutHeightScreen{
   height: calc(100vh - 80px);
 }
+#bgImg{
+  transition: .4s!important;
+}
+#card:hover > div > #bgImg{
+  transform: scale(1.1);
+}
+#desk::first-letter{
+  font-size: 3rem;
+  margin-right: 5px;
+  color:rgb(182, 104, 255);
+}

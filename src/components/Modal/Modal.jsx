@@ -49,7 +49,7 @@ const Modal = () => {
 
     const handleSubmit=(event)=>{
         event.preventDefault()
-        const blogObject = {name:name,catagory:catagory,date:currentDate,heading:header,description:description,image:selectedImage}
+        const blogObject = {name:"Default Name that set From MODAL",catagory:catagory,reaction:0,date:currentDate,heading:header,description:description,image:selectedImage}
         dispatch(AddBlog(blogObject))
         dispatch(ClickModalFalse())
     }
