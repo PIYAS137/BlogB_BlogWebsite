@@ -29,7 +29,7 @@ const LeftBar = () => {
         </div>
         <hr className='mt-2 w-full h-[1px] mx-auto bg-gray-700 border-0  dark:bg-gray-700'/>
         <div onClick={handleClick} className='cursor-pointer text-center mt-2 bg-gradient-to-r from-[#662D8C] text-white py-2 text-lg rounded-lg to-blue-500 w-full'>
-          Reset Data
+          View All Blogs
         </div>
       </div>
     </React.Fragment >

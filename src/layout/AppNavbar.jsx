@@ -59,6 +59,7 @@ const AppNavbar = () => {
       </div>
 
 
+
       {/* modal area */}
       <Modal />
       {/* modal area */}
