@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useLocation, useParams } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import LeftBar from '../components/LeftBar/LeftBar';
 import RightBar from '../components/RightBar/RightBar';
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";

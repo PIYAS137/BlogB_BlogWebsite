@@ -25,7 +25,6 @@ const Homepage = () => {
             <LeftBar/>
             <MiddleArea/>
             <RightBar/>
-        {/* <div className='absolute w-16 h-16 bg-gray-200 bottom-10 right-10'></div> */}
         </div>
     </React.Fragment>
   )

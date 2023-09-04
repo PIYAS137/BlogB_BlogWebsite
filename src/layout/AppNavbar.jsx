@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Logo from '../components/Navbar/Logo';
 import { HiPencil } from "react-icons/hi";
 import Modal from '../components/Modal/Modal';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { ClickCatagoryOption, ClickModalTrue, ClickSearchButton, ClickSwapTrue, SeeAllBlogsButton } from '../features/blogSlice';
 import { Link, useNavigate } from 'react-router-dom';
 import { CatagoryData } from '../database/Catagory';

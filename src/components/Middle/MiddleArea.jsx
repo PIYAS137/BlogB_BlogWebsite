@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import MidSingle from './MidSingle'
 import { v4 as uuidv4 } from 'uuid';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { HiChevronLeft } from "react-icons/hi";
 
 const MiddleArea = () => {
   const { data,catagoryClick } = useSelector((state) => state.blog)
