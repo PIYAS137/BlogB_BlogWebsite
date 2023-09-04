@@ -7,6 +7,8 @@ import { useFirebase } from '../../context/Firebase'
 
 const RightBar = () => {
   const { clickSwap ,myBlogData } = useSelector((state) => state.blog)
+  const {user}=useFirebase()
+  console.log(user)
   const {LogOut} = useFirebase()
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -34,12 +36,12 @@ const RightBar = () => {
 
   return (
     <React.Fragment>
-      <div className='w-[18%] py-10 flex flex-col text-gray-400 items-center'>
-        <div className='w-24 h-24 rounded-full overflow-hidden'>
-          <img src="https://i.pinimg.com/564x/46/82/be/4682becf0956095dd75dcbfe11773915.jpg" alt="" />
+      <div className='w-[18%] hidden py-10 lg:flex flex-col text-gray-400 items-center'>
+        <div className='w-24 my-5 h-24 rounded-full overflow-hidden'>
+          <img src={user.photoURL} alt="" />
         </div>
-        <h1 className='text-2xl font-semibold mt-3 text-gray-300'>Piyas Mahamude Alif</h1>
-        <small>piyasmahmudealif@gmail.com</small>
+        <h1 className='text-2xl font-semibold mt-3 text-gray-300'>{user.displayName}</h1>
+        <small>{user.email}</small>
         <p className='my-6 text-lg'>My Blogs : <span className='font-sans'>{myBlogData.length}</span> Blog</p>
 
 

@@ -14,7 +14,7 @@ const MiddleArea = () => {
     <React.Fragment>
 
 
-      <div className='flex-1 gap-5 py-5 wrapperMain grid grid-cols-3 navOutHeightScreen overflow-y-scroll relative'>
+      <div className='flex-1 gap-3 lg:gap-5 py-3 lg:py-5 wrapperMain grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 navOutHeightScreen overflow-y-scroll relative'>
 
       {data.length == 0 ?<h1 className="text-base xl:text-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-red-500 textce">! . . . No blogs available for this <span className='text-white'>{catagoryClick}</span> Catagory . . . !</h1>: null}
 

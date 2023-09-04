@@ -14,7 +14,7 @@ const MidSingle = ({ data }) => {
             <Link onClick={handleClick} to="singleView" state={ data}>
                 <div id='card' className='rounded-xl min-h-96 bg-gradient-to-r relative cursor-pointer from-[#662D8C] to-blue-500'>
                     {/* <img className='rounded-t-xl' src={image} alt="" /> */}
-                    <div className='w-full overflow-x-hidden rounded-t-xl'>
+                    <div className='w-full overflow-hidden rounded-t-xl'>
                         <div id='bgImg'
                             className=' h-44 cardImage' style={{
                                 backgroundImage: `url(${image})`

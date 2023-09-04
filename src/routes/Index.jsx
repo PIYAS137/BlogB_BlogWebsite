@@ -9,6 +9,8 @@ import { useFirebase } from '../context/Firebase'
 
 const Index = () => {
   const {user}= useFirebase()
+
+
   return (
     <BrowserRouter>
     {user && <AppNavbar/>}
@@ -25,6 +27,7 @@ const Index = () => {
         />
             <Route path='/singleView' element={<SingleBlogView/>}/>
             <Route path='viewallblogs' element={<ViewAllMyBlogs/>}/>
+            <Route path='viewallblogs/singleView' element={<SingleBlogView/>}/>
             <Route path='login' element={<Login/>}/>
         </Routes>
     </BrowserRouter>

@@ -8,7 +8,6 @@ const Modal = () => {
 
     const dispatch = useDispatch()
 
-    const [name,setName]=useState('');
     const [catagory,setCatagory]=useState('');
     const [currentDate, setCurrentDate] = useState('');
     const [header,setHeader]=useState('')
@@ -58,7 +57,7 @@ const Modal = () => {
       dispatch(ClickModalFalse())
     }
 
-
+    console.log(clickModal)
 
 
 
@@ -67,8 +66,8 @@ const Modal = () => {
     <React.Fragment>
       {clickModal && 
       
-      <dialog className="z-30 top-0 left-0 w-full h-screen bgx flex justify-center items-center">
-        <form onSubmit={handleSubmit} className="modal-box bg-[rgb(26,26,26)] max-w-4xl">
+      <dialog className=" absolute top-0 left-0 w-full h-screen bgx flex justify-center items-center">
+        <form onSubmit={handleSubmit} className="modal-box bg-[rgb(26,26,26)] max-w-4xl z-50">
         <button onClick={hanldeClickModalStatus} className="btn btn-sm btn-circle btn-ghost absolute right-3 top-3 text-white bg-zinc-800">✕</button>
           <h3 className="font-bold text-3xl text-purple-500 pb-6">Lets write for the world!</h3>
           <div className='flex justify-between items-center'>
@@ -79,8 +78,8 @@ const Modal = () => {
             <input accept="image/*" onChange={handleFileChange} type="file" />
           </div>
           <textarea onChange={e=>{setHeader(e.target.value)}} name="" id="" rows="1" className='border-none rounded-lg w-full bg-gray-500 p-3 mb-2 outline-none' placeholder='Heading...'></textarea>
-          <textarea onChange={e=>{setDescription(e.target.value)}} name="" id="" rows="22" className='border-none rounded-lg w-full bg-gray-500 p-3 mb-2 outline-none' placeholder='Describe topic...'></textarea>
-          <button className='bg-gray-500 px-10 py-1 rounded-lg text-md'>Post</button>
+          <textarea onChange={e=>{setDescription(e.target.value)}} name="" id="" rows="15" className='border-none rounded-lg w-full bg-gray-500 p-3 mb-2 outline-none' placeholder='Describe topic...'></textarea>
+          <button className='bg-purple-500 px-10 py-1 rounded-lg text-md'>Post</button>
         </form>
       </dialog>
       

@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import LeftBar from '../components/LeftBar/LeftBar';
 import RightBar from '../components/RightBar/RightBar';
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";
+import { FaChevronLeft } from "react-icons/fa";
+import { useDispatch } from 'react-redux';
+import { ClickSwapTrue } from '../features/blogSlice';
 
 const SingleBlogView = () => {
   const data = useLocation()
+  const dispatch = useDispatch()
   const { catagory, date, description, heading, image, name, reaction } = data.state;
 
   const [isTrue, setIstrue] = useState(false)
@@ -20,13 +24,21 @@ const SingleBlogView = () => {
     }
   }
 
+  const handleClickBack=()=>{
+    console.log("done")
+    dispatch(ClickSwapTrue())
+  }
+
 
 
   return (
-    <div className='prime flex justify-between px-8 space-x-8'>
+    <div className='prime flex justify-between px-4 lg:px-8 space-x-0 lg:space-x-8'>
       <LeftBar />
       <div className='flex-1 h-full overflow-y-scroll '>
-        <div className='w-[70%]  mx-auto'>
+        <Link to='/'>
+        <span onClick={handleClickBack} className='text-gray-300 flex items-center'><FaChevronLeft className='mr-2'/> Back</span>
+        </Link>
+        <div className='lg:w-[70%]  mx-auto'>
         <h1 className='text-4xl py-3 text-blue-400'>{heading}</h1>
           <div className='w-full mt-5 flex justify-center items-center'>
             <img className='flex-1 rounded-lg' src={image} alt="" />

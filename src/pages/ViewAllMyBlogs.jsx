@@ -21,7 +21,7 @@ const ViewAllMyBlogs = () => {
     }
 
     return (
-        <div className='flex justify-between px-8 space-x-8 navOutHeightScreen overflow-hidden'>
+        <div className='flex justify-between px-4 lg:px-8 space-x-0 lg:space-x-8 navOutHeightScreen overflow-hidden'>
             <LeftBar />
 
 
