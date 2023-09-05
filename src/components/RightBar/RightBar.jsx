@@ -8,7 +8,6 @@ import { useFirebase } from '../../context/Firebase'
 const RightBar = () => {
   const { clickSwap ,myBlogData } = useSelector((state) => state.blog)
   const {user}=useFirebase()
-  console.log(user)
   const {LogOut} = useFirebase()
   const dispatch = useDispatch()
   const navigate = useNavigate()

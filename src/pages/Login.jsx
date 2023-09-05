@@ -11,8 +11,6 @@ const Login = () => {
         await GoogleLogIn()
         navigate('/')
     }
-
-
     return (
         <React.Fragment>
             <div className='w-full h-screen flex justify-center items-center'>

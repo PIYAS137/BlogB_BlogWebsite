@@ -23,7 +23,7 @@ const MidSingle = ({ data }) => {
                             }}></div>
                     </div>
 
-                    {user.displayName=== data.name && <img src={user.photoURL} className=' border border-white w-8 h-8 object-cover rounded-full absolute top-1 right-1 text-xl text-black text-bl cursor-pointer' />}
+                    {user.displayName === data.name && <img src={user.photoURL} className=' border border-white w-8 h-8 object-cover rounded-full absolute top-1 right-1 text-xl text-black text-bl cursor-pointer' />}
                     
 
                     <div className='px-3'>
