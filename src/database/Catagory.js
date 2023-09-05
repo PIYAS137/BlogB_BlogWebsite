@@ -34,5 +34,13 @@ export const CatagoryData=[
     {
         id:9,
         topic:"Forest"
+    },
+    {
+        id:10,
+        topic:"Medical"
+    },
+    {
+        id:11,
+        topic:"Gaming"
     }
 ]

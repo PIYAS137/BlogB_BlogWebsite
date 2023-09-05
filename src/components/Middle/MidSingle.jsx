@@ -2,8 +2,10 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { ClickModalFalse, ClickModalTrue, ClickSwapFalse, ClickSwapTrue } from '../../features/blogSlice';
+import { useFirebase } from '../../context/Firebase';
 
 const MidSingle = ({ data }) => {
+    const {user}=useFirebase()
     const { catagory, image, heading, description, date } = data;
     const dispatch=useDispatch()
     const handleClick=()=>{
@@ -21,7 +23,8 @@ const MidSingle = ({ data }) => {
                             }}></div>
                     </div>
 
-                    <img src='https://i.pinimg.com/564x/46/82/be/4682becf0956095dd75dcbfe11773915.jpg' className=' border border-white w-8 h-8 object-cover rounded-full absolute top-1 right-1 text-xl text-black text-bl cursor-pointer' />
+                    {user.displayName=== data.name && <img src={user.photoURL} className=' border border-white w-8 h-8 object-cover rounded-full absolute top-1 right-1 text-xl text-black text-bl cursor-pointer' />}
+                    
 
                     <div className='px-3'>
                         <div className='flex justify-between items-center mt-1'>

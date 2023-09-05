@@ -2,7 +2,7 @@ import React from 'react'
 import { CatagoryData } from '../../database/Catagory'
 import LeftSC from './LeftSC'
 import { useDispatch } from 'react-redux'
-import { ClickCatagoryOption, ClickSwapFalse, ClickSwapTrue, SeeAllBlogsButton } from '../../features/blogSlice'
+import { ClickCatagoryOption, ClickSwapTrue, SeeAllBlogsButton } from '../../features/blogSlice'
 import { useNavigate } from 'react-router-dom'
 
 const LeftBar = () => {
@@ -23,7 +23,7 @@ const LeftBar = () => {
   return (
     <React.Fragment>
       <div className='w-[12%] hidden lg:block'>
-        <h1 className='text-xl text-gray-300 text-center py-3 tracking-wider'>Catagory of Topics</h1>
+        <h1 className='text-xl text-gray-300 text-center py-3 tracking-wider'>Category of Topics</h1>
         <div className='flex flex-col space-y-2'>
           {CatagoryData.map((one) => <LeftSC key={one.id} getCData={getCData} data={one} />)}
         </div>
