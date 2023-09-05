@@ -14,11 +14,10 @@ const blogSlice = createSlice({
     initialState: StateData,
     reducers: {
         AddBlog: (state, action) => {
-            state.data.unshift(action.payload)
-            state.myBlogData.unshift(action.payload)
+            state.data=[action.payload, ...state.data]
+            state.myBlogData=[action.payload, ...state.data]
             state.prevAllBlogIncludeMyandDefault = [...state.data]
-            Data.unshift(action.payload)
-            console.log(state.data)
+            Data=[action.payload, ...Data]
         },
         DelteItem: (state, action) => {
             state.data.pop();
