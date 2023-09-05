@@ -5,7 +5,7 @@
 
 <h2>
 
-[Live view ](https://pages.github.com/). . .
+[Live link ](https://pages.github.com/) of this project !
 </h2>
 
 <img width="100%" src="./src/assets/desktop view.png">
@@ -13,9 +13,10 @@
 
 <h1></h1>
 
+This is one of my dreame project! I think to create like this when i was start coding! I faced so many problems but I fixed it successfull! Now I've a strong knowledge on React Jx.
 
 
-<img  width="100%"src="./src/assets/single page view.png">
+<img  width="100%" src="./src/assets/single page view.png">
 
 <h1></h1>
 
@@ -24,10 +25,10 @@ _*Each line of code and Design of every Px is create by my hand!*_
 
 <h1>What can be done : </h1>
 
-    2. Create post
-    1. Google Login
-    4. Responsive frame
-    3. Searching (3 types)
+- Create new post
+- Google Login
+- Responsive frame
+- Searching (3 types)
 
 
 <h3>A little info about this project :</h3>
