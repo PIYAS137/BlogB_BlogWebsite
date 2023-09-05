@@ -34,9 +34,9 @@ const SingleBlogView = () => {
   return (
     <div className='prime flex justify-between px-4 lg:px-8 space-x-0 lg:space-x-8'>
       <LeftBar />
-      <div className='flex-1 h-full overflow-y-scroll '>
+      <div className='flex-1 h-full overflow-y-scroll pb-5'>
         <Link to='/'>
-        <span onClick={handleClickBack} className='text-gray-300 flex items-center'><FaChevronLeft className='mr-2'/> Back</span>
+        <span onClick={handleClickBack} className='text-gray-300 flex items-center pt-2'><FaChevronLeft className='mr-2'/> Back</span>
         </Link>
         <div className='lg:w-[70%]  mx-auto'>
         <h1 className='text-4xl py-3 text-blue-400'>{heading}</h1>
