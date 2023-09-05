@@ -33,22 +33,23 @@ _*Each line of code and Design of every Px is create by my hand!*_
 
 <h3>A little info about this project :</h3>
     
-    + start date : 02 Aug 2023
-    + end date   : 06 Aug 2023
+> start date : 02 Aug 2023
+
+> end date   : 06 Aug 2023
 
 <h3>Language I Use :</h3>
 
-    - HTML5
-    - Tailwind CSS
-    - Vanilla Js
-    - React Js
+- HTML5
+- Tailwind CSS
+- Vanilla Js
+- React Js
 
 <h3>Technology I Use :</h3>
 
-    - React Redux 
-    - Context API
-    - Firebase Auth (only google for proper view)
-    - vite (for light weight)
+- React Redux 
+- Context API
+- Firebase Auth (only google for proper view)
+- vite (for light weight)
     
 
 
