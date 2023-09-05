@@ -48,6 +48,7 @@ _*Each line of code and Design of every Px is create by my hand!*_
     - React Redux 
     - Context API
     - Firebase Auth (only google for proper view)
+    - vite (for light weight)
     
 
 
