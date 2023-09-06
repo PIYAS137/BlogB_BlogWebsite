@@ -34,7 +34,7 @@ const ViewAllMyBlogs = () => {
                     </Link>
                     <h1 className=''>No Blog posted yet !</h1>
                 </div> : null}
-                <div className=' gap-5 py-5 navOutHeightScreen wrapperMain prime grid grid-cols-3 overflow-y-scroll '>
+                <div className=' gap-5 py-5 navOutHeightScreen wrapperMain prime grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 overflow-y-scroll '>
 
 
                     {myBlogData.map((one) => <MidSingle key={uuidv4()} data={one} />)}
