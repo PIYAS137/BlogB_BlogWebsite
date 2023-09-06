@@ -5,7 +5,7 @@
 
 <h2>
 
-[Live link ](https://pages.github.com/) of this project !
+[Live link ](https://blogwebsite001-a9161.web.app/login) of this project !
 </h2>
 
 <img width="100%" src="./src/assets/desktop view.png">
