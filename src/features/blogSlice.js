@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { Data } from "../database/Data";
 
 const StateData = {
+    ALLData : [...Data],
     data: [...Data],
     clickModal: false,
     myBlogData: [],
@@ -15,9 +16,17 @@ const blogSlice = createSlice({
     reducers: {
         AddBlog: (state, action) => {
             state.data=[action.payload, ...state.data]
-            state.myBlogData=[action.payload, ...state.data]
+
+
+            state.myBlogData=[action.payload, ...state.myBlogData]
+
+
+
             state.prevAllBlogIncludeMyandDefault = [...state.data]
-            Data=[action.payload, ...Data]
+            console.log(action.payload)
+            Object.preventExtensions(state.ALLData)
+            state.ALLData=[action.payload, ...state.ALLData]
+            console.log(state.data)
         },
         DelteItem: (state, action) => {
             state.data.pop();
@@ -35,7 +44,7 @@ const blogSlice = createSlice({
             state.clickSwap = false
         },
         ClickCatagoryOption: (state, action) => {
-            state.data = [...Data]
+            state.data = [...state.ALLData]
             let text = action.payload
             const temp = state.data.filter((one) => one.catagory.toLowerCase() == text.toLowerCase());
             state.data = temp
@@ -47,7 +56,7 @@ const blogSlice = createSlice({
             let catagoryData = key[1];
             if (searchInputData != "") {
                 state.data=state.data
-                let tempSearch = Data.filter((one) => one.heading.toLocaleLowerCase().includes(searchInputData.toLocaleLowerCase()))
+                let tempSearch = state.ALLData.filter((one) => one.heading.toLocaleLowerCase().includes(searchInputData.toLocaleLowerCase()))
                 console.log(tempSearch)
                 state.data = tempSearch
             }
@@ -57,7 +66,7 @@ const blogSlice = createSlice({
             }
         },
         SeeAllBlogsButton:(state,action)=>{
-            state.data=Data
+            state.data=[...state.ALLData]
         }
 
     }

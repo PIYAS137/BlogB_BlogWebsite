@@ -75,7 +75,7 @@ const Modal = () => {
             </select>
             <input required className='bg-purple-500 mb-2 lg:mb-0 rounded-lg w-full lg:max-w-xs  text-white' accept="image/*" onChange={handleFileChange} type="file" />
           </div>
-          <textarea required onChange={e=>{setHeader(e.target.value)}} name="" id="" rows="1" className='border-none rounded-lg w-full bg-purple-500 p-3 mb-2 outline-none' placeholder='Heading...'></textarea>
+          <textarea required onChange={e=>{setHeader(e.target.value)}} name="" id="" rows="1" className='text-white text-xl border-none rounded-lg w-full bg-purple-500 p-3 mb-2 outline-none' placeholder='Heading...'></textarea>
           <textarea required onChange={e=>{setDescription(e.target.value)}} name="" id="" rows="15" className='border-none rounded-lg w-full bg-purple-500 p-3 mb-2 outline-none' placeholder='Describe topic...'></textarea>
           <button className='bg-purple-500 text-white px-10 py-2 text-md lg:text-lg rounded-lg text-md'>Post</button>
         </form>
